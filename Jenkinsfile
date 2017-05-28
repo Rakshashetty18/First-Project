@@ -1,4 +1,5 @@
 pipeline {
+    node {
     agent any
 
     stages {
@@ -6,6 +7,7 @@ pipeline {
             steps {
                    build 'Test'
                    }
+        }
         }
     }
 }
